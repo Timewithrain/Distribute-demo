@@ -20,7 +20,10 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka/
+      #defaultZone: http://localhost:7001/eureka/
+      #构建Eureka集群时，向多个Eureka实例注册服务
+      #当多个Eureka的hostname相同时，微服务默认向defaultZone的最后一个实例进行注册
+      defaultZone: http://localhost02:7002/eureka/,http://localhost01:7001/eureka/
     #修改微服务名称application-id
     instance:
       instance-id: distribute-provider-dept

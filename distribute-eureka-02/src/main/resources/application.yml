@@ -1,0 +1,14 @@
+server:
+  port: 7002
+
+eureka:
+  instance:
+    hostname: localhost02         #注：hostname不能带有下划线或特殊字符，否则Eureka组件无法识别
+  client:
+    register-with-eureka: false   #是否向eureka中进行注册
+    fetch-registry: false         #false表示自身即为注册中心
+    service-url:                  #设置注册中心所在的服务url;当构建Eureka集群时，defaultZone需要包含除自身以外集群中其他Eureka实例的url路径
+      defaultZone: http://localhost01:7001/eureka/
+
+
+

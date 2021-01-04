@@ -7,12 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="distribupte-provider-dept" />
-        <module name="distribute-consumer-dept" />
         <module name="distribute-api" />
-        <module name="distribute-provider-dept" />
         <module name="distribute-eureka" />
         <module name="dsitribute-consumer-dept" />
+        <module name="distribupte-provider-dept" />
+        <module name="distribute-eureka-02" />
+        <module name="distribute-consumer-dept" />
+        <module name="distribute-provider-dept" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -3,12 +3,12 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: localhost01
   client:
     register-with-eureka: false   #是否向eureka中进行注册
     fetch-registry: false         #false表示自身即为注册中心
     service-url:                  #设置注册中心所在的服务url
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
-
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+      defaultZone: http://localhost02:7002/eureka
 
 
