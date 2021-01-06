@@ -13,6 +13,8 @@
         <module>distribute-provider-dept</module>
         <module>distribute-eureka</module>
         <module>distribute-eureka-02</module>
+        <module>distribute-provider-dept-02</module>
+        <module>distribute-provider-dept-03</module>
     </modules>
 
     <packaging>pom</packaging>

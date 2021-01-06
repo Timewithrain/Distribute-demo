@@ -26,4 +26,4 @@ eureka:
       defaultZone: http://localhost02:7002/eureka/,http://localhost01:7001/eureka/
     #修改微服务名称application-id
     instance:
-      instance-id: distribute-provider-dept
+      instance-id: distribute-provider-dept-01

@@ -15,7 +15,9 @@ public class DeptConsumerController {
     @Autowired
     private RestTemplate restTemplate;
 
-    private static final String REST_PROVIDER_URL = "http://localhost:8001";
+//    private static final String REST_PROVIDER_URL = "http://localhost:8001";
+    //使用eureka进行服务发现时，不再使用固定IP访问服务提供者，使用服务ID通过注册中心进行服务发现
+    private static final String REST_PROVIDER_URL = "http://distribute-provider-dept";
 
     @RequestMapping("/addDept")
     public boolean addDept(Dept dept){

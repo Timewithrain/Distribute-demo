@@ -7,7 +7,7 @@
     <insert id="addDept" parameterType="Dept">
         insert into dept (name,db_source)values (#{name},DATABASE())
     </insert>
-    
+
     <select id="queryDeptById" parameterType="int" resultType="Dept">
         select * from dept where id=#{Id}
     </select>

@@ -4,12 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
+@EnableEurekaClient
 @SpringBootApplication
-@EnableEurekaClient     //开启服务发现，从注册中心发现服务
-public class DistributeDeptConsumerApplication {
+public class DistributeDeptProviderApplication_03 {
 
-    public static void main(String[] args){
-        SpringApplication.run(DistributeDeptConsumerApplication.class,args);
+    public static void main(String[] args) {
+        SpringApplication.run(DistributeDeptProviderApplication_03.class, args);
     }
 
 }

@@ -13,7 +13,7 @@
     </select>
 
     <select id="listAll" resultType="Dept">
-        select * from dept
+        select id as Id,name,db_source as dataSource from dept
     </select>
 
 </mapper>
