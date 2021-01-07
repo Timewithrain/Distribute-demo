@@ -1,0 +1,9 @@
+server:
+ port: 80
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost01:7001/eureka/,http://localhost02:7002/eureka/,
+    #fetch-registry: true      #获取注册中心的可用服务，默认为true

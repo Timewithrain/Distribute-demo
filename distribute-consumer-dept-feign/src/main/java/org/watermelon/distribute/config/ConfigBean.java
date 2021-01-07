@@ -1,4 +1,4 @@
-package org.watermelon.config;
+package org.watermelon.distribute.config;
 
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.RandomRule;
@@ -16,9 +16,9 @@ public class ConfigBean {
         return new RestTemplate();
     }
 
-    @Bean           //通过随机算法实现provider的负载均衡
-    public IRule randomRule(){
-        return new RandomRule();
-    }
+//    @Bean           //通过随机算法实现provider的负载均衡
+//    public IRule randomRule(){
+//        return new RandomRule();
+//    }
 
 }
