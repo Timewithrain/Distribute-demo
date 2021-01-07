@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.watermelon.mapper.DeptMapper">
+    <insert id="addDept" parameterType="Dept">
+        insert into dept (name,db_source)values (#{name},DATABASE())
+    </insert>
+    
+    <select id="queryDeptById" parameterType="int" resultType="Dept">
+        select id as Id,name,db_source as dataSource from dept where id=#{Id}
+    </select>
+
+    <select id="listAll" resultType="Dept">
+        select id as Id,name,db_source as dataSource from dept
+    </select>
+
+</mapper>

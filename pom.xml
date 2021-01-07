@@ -16,6 +16,7 @@
         <module>distribute-provider-dept-02</module>
         <module>distribute-provider-dept-03</module>
         <module>distribute-consumer-dept-feign</module>
+        <module>distribute-provider-dept-hystrix</module>
     </modules>
 
     <packaging>pom</packaging>
