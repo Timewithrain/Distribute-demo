@@ -9,7 +9,7 @@
     </insert>
 
     <select id="queryDeptById" parameterType="int" resultType="Dept">
-        select * from dept where id=#{Id}
+        select id as Id,name,db_source as dataSource from dept where id=#{Id}
     </select>
 
     <select id="listAll" resultType="Dept">

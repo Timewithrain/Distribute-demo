@@ -20,17 +20,17 @@ public class DeptConsumerController {
 
     @RequestMapping("/addDept")
     public boolean addDept(Dept dept){
-        return this.deptClientService.addDept(dept);
+        return deptClientService.addDept(dept);
     }
 
     @RequestMapping("/getDeptById/{Id}")
     public Dept getDept(@PathVariable("Id") int Id){
-        return this.deptClientService.getDept(Id);
+        return deptClientService.getDept(Id);
     }
 
     @RequestMapping("/listDept")
     public List<Dept> listDept(){
-        return this.deptClientService.listDept();
+        return deptClientService.listDept();
     }
 
 
