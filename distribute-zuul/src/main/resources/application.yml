@@ -1,0 +1,21 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: distribute-zuul-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost02:7002/eureka/,http://localhost01:7001/eureka/
+    instance:
+      instance-id: zuulgateway
+      prefer-ip-address: true
+
+zuul:
+  routes:
+    mydept.serviceId: distribute-provider-dept
+    mydept.path: /dept/**                       #替换路径信息，使用/dept/**路径，隐藏服务信息
+  ignored-services: distribute-provider-dept    #限制原路径，使原路径无法访问服务，保护服务
+  prefix: /lalala

@@ -18,6 +18,7 @@
         <module>distribute-consumer-dept-feign</module>
         <module>distribute-provider-dept-hystrix</module>
         <module>distribute-consumer-hystrix-dashboard</module>
+        <module>distribute-zuul</module>
     </modules>
 
     <packaging>pom</packaging>

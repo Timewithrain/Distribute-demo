@@ -8,13 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="distribute-consumer-dept-feign" />
-        <module name="distribute-api" />
+        <module name="distribute-zuul" />
         <module name="distribute-eureka" />
         <module name="dsitribute-consumer-dept" />
+        <module name="distribute-provider-dept-hystrix" />
+        <module name="distribute-api" />
         <module name="distribute-consumer-hystrix-dashboard" />
         <module name="distribupte-provider-dept" />
         <module name="distribute-eureka-02" />
-        <module name="distribute-provider-dept-hystrix" />
         <module name="distribute-provider-dept-02" />
         <module name="distribute-provider-dept-03" />
         <module name="distribute-consumer-dept" />
