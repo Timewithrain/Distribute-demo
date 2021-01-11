@@ -27,3 +27,9 @@ eureka:
     #修改微服务名称application-id
     instance:
       instance-id: distribute-provider-dept-hystrix
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include: "*"     #暴露hystrix服务生产者站点
