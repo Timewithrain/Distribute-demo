@@ -20,6 +20,7 @@
         <module>distribute-consumer-hystrix-dashboard</module>
         <module>distribute-zuul</module>
         <module>distribute-config-server</module>
+        <module>distribute-config-client</module>
     </modules>
 
     <packaging>pom</packaging>

@@ -1,0 +1,4 @@
+#config-client模块的配置，此出仅需配置服务名称，具体配置内容通过从config-server服务中获取远程配置补全
+spring:
+  application:
+    name: distribute-config-client

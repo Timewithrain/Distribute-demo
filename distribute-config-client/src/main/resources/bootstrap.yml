@@ -1,0 +1,8 @@
+#系统级配置，较application.yml优先级更高
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9201      #链接至distribute-config-server服务，获取配置
+      name: config-client             #配置文件名称
+      profile: dev                    #配置文件模式
+      label: master                   #配置文件所在的仓库分支
