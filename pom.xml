@@ -19,6 +19,7 @@
         <module>distribute-provider-dept-hystrix</module>
         <module>distribute-consumer-hystrix-dashboard</module>
         <module>distribute-zuul</module>
+        <module>distribute-config-server</module>
     </modules>
 
     <packaging>pom</packaging>

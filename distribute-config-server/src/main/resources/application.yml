@@ -1,0 +1,19 @@
+server:
+  port: 9528
+
+spring:
+  application:
+    name: distribute-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Timewithrain/Distribute-demo.git  #连接github远程仓库
+          skipSslValidation: true                                   #跳过SSL验证
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost02:7002/eureka/,http://localhost01:7001/eureka/
+    instance:
+      instance-id: distribute-config-server

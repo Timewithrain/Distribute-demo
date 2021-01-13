@@ -12,6 +12,7 @@
         <module name="distribute-eureka" />
         <module name="dsitribute-consumer-dept" />
         <module name="distribute-provider-dept-hystrix" />
+        <module name="distribute-config-server" />
         <module name="distribute-api" />
         <module name="distribute-consumer-hystrix-dashboard" />
         <module name="distribupte-provider-dept" />
